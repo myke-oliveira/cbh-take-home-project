@@ -9,3 +9,12 @@ You've been asked to refactor the function `deterministicPartitionKey` in [`dpk.
 You will be graded on the exhaustiveness and quality of your unit tests, the depth of your refactor, and the level of insight into your thought process provided by the written explanation.
 
 ## Your Explanation Here
+
+## Unit tests
+
+ * Expand the existing test for no given input to check any falsy input, as it is not a trivial choice.
+ * As function name includes the "deterministic" adjetive, so it must return save value for same inputs.
+ * Check if partition key given by input object is respected by the function.
+## Refactoring
+
+I eliminated chaining dependence among variables, returning from function as early as possible, in that way, code reader doesn't need to check, for example, that a falsy `event` makes `candidate` to be the trivial partition key and then the trivial partition key return, showing that an falsy `event` makes trivial partition key to be returned and avoiding uneeded computation. That makes `candidate` variable name not to have sense anymore, so it was changed to `key`, name `data` was changed to something more especific as well. It is also documented that `digest` method returns a string if a parameter is given, so there is no need to check the type of `key`.
