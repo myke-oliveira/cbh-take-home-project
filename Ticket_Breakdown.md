@@ -16,3 +16,17 @@ Based on the information given, break this ticket down into 2-5 individual ticke
 You will be graded on the level of detail in each ticket, the clarity of the execution plan within and between tickets, and the intelligibility of your language. You don't need to be a native English speaker, but please proof-read your work.
 
 ## Your Breakdown Here
+
+### Alter Agent table structure to add an optional custom id.
+
+    * Time/effort: 1 hour / easy
+
+### Change Agent Registration Api Endpoint to save an optional custom id.
+
+    Time/effort: 5 hours / easy.
+
+### Change Agent Registration Form to include a optional custom id.
+
+    * Time/effort: 5 hours / easy
+
+Time and effort give for development, review and test steps. There is no need to chante the reports as I guess the info is summarized.
